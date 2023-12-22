@@ -7,7 +7,7 @@ services:
       TUNNEL_URL: http://postgrest:3000
     command: "tunnel --no-autoupdate"
     volumes:
-      - ./cloudflared:/etc/cloudflared
+      - ~/cloudflared:/etc/cloudflared
     links:
       - postgrest:postgrest
     depends_on:
